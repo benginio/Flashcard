@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/bloc1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions :"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
+            />
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1"
+            android:textColor="@color/purple_500"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" to 3 :"
+            android:textColor="@color/purple_500"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bgtv"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:hint="Who's the first Female president of Haiti?"
+        android:padding="50dp"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationZ="3dp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselcetedbutton"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="option_a"
+            android:textSize="16sp"
+            android:translationZ="3dp" />
+
+        <Button
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselcetedbutton"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="option_b"
+            android:textSize="16sp"
+            android:translationZ="3dp" />
+
+        <Button
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselcetedbutton"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="option_c"
+            android:textSize="16sp"
+            android:translationZ="3dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="Next"
+            android:textSize="16sp"
+            android:translationZ="3dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
